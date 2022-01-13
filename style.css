@@ -1,0 +1,139 @@
+* { 
+    /* RESET CSS  */
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* variables */
+    --green-dark: rgba(45, 74, 34, 1);
+    --green: rgba(73, 170, 38, 1);
+    --white: rgba(255, 255, 255, 1);
+    --red: rgba(233, 41, 41, 1);
+    --blue-dark: rgb(54, 63, 95);
+    --blue-light: rgba(150, 156, 178, 1);
+}
+
+.container {
+    width: min(90vw, 80rem);
+    margin: auto;
+}
+
+body{
+    background-color: #E5E5E5;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--blue-dark);
+
+    font-weight: normal;
+}
+
+header {
+    background: var(--green-dark);
+    color: var(--white);
+    
+    padding: 2rem 0 15rem;
+}
+
+#logo {
+    font-weight: 100;
+    text-align: center;
+}
+
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: var(--white);
+    margin-top: 0;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 0.25rem;
+    
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    color: var(--blue-dark);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+
+    margin-top: 1rem;
+}
+
+.card.total {
+    background: var(--green);
+    color: var(--white);
+}
+
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: var(--blue-light);
+}
+
+table thead tr th {
+    background: var(--white);
+    font-weight: normal;
+
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+table tbody tr td{
+    background: var(--white);
+
+    padding: 1rem 2rem;
+}
+
+table tbody tr{
+    opacity: 0.7;
+}
+
+table tr:hover{
+    opacity: 1;
+}
+
+table thead tr th:nth-child(1),
+table tbody tr td:nth-child(1){
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+td.description {
+    color: var(--blue-dark);
+}
+
+td.income {
+    color: var(--green);
+}
+
+td.expense {
+    color: var(--red);
+}
+
+
+footer {
+    text-align: center;
+    color: var(--blue-dark);
+    opacity: 0.6;
+
+    padding: 4rem 0 2rem;
+}
+
