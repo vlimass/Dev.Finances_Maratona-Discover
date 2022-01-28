@@ -151,6 +151,10 @@ table tr:hover{
     opacity: 1;
 }
 
+table td img {
+    cursor: pointer;
+}
+
 table thead tr th:nth-child(1),
 table tbody tr td:nth-child(1){
     border-radius: 0.25rem 0 0 0.25rem;
